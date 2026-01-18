@@ -1,4 +1,4 @@
-name: CI/CD - Build & Push Docker image
+name: GitHub Actions - Build & Push Docker image
 
 on:
   push:
