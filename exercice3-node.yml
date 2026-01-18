@@ -1,0 +1,20 @@
+name: GitHub Actions - Déploiement d’une image Docker d'une application
+
+on:
+  workflow_dispatch:
+    inputs:
+      node-version:
+        description: "Version de Node.js a installer"
+        required: true
+        default: "18"
+
+jobs:
+  setup-node:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Installer Node.js par Bodjona Kevin
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ github.event.inputs.node-version }}
+      - name: Afficher la version
+        run: node -v
