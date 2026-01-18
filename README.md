@@ -10,11 +10,8 @@ Le workflow CI/CD est dans `.github/workflows/exercice3-node.yml`.
 
 Dans GitHub → Settings → Secrets and variables → Actions, ajouter:
 
-
 ## Image publiée
-
 
 ## Test local
 
 Depuis la racine du repo:
-
